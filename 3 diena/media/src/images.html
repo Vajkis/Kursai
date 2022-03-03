@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Images</title>
+</head>
+<body>
+	<header style='margin-bottom: 10px;'>
+		<nav>
+			<a href='../index.html'>Atgal</a>
+		</nav>
+	</header>
+
+	<div>
+		<img src='./assets/dog1.jpg'>
+	</div>
+
+	<div>
+		<picture>
+			<source media='(min-width: 650px)' srcset='./assets/dog2.png'>
+			<source media='(min-width: 465px)' srcset='./assets/dog3.jpg'>
+			<img src='./assets/dog1.jpg' alt='dog'>
+		</picture>
+	</div>
+</body>
+</html>
