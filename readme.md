@@ -1,1 +1,2 @@
-mokinames git
+to do:
+ismokt kaip veikia branch
