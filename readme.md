@@ -1,2 +1,2 @@
 to do:
-ismokt kaip veikia branch
+ismokt kaip pasalinti branch
