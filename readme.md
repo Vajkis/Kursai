@@ -1,2 +1,1 @@
-to do:
-ismokt kaip pasalinti branch
+to do: nothink i guest
