@@ -70,7 +70,11 @@ color: #353846;
 margin: auto;
 }
 
-input[type=text], input[type=email], input[type=address], input[type=date], textarea, select{
+input[type=text]{
+width: 96%;
+}
+
+input[type=email], input[type=address], input[type=date], textarea, select{
 width: 98%;
 }
 
