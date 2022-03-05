@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forms</title>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+
+<body>
+	<form id="registration" action="./succesful.html" ></form>
+
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">
+					<span>Register</span>
+				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>
+					<!-- first name -->
+					<label for="firstName">
+						<div class="bold"><span class="red">*</span> First name:</div>
+						<input type="text" name="firstName" form="registration" required>
+					</label>
+				</td>
+
+				<td>
+					<!-- last name -->
+					<label for="lastName">
+						<div class="bold"><span class="red">*</span> Last name:</div>
+						<input type="text" name="lastName" form="registration" required>	
+					</label>	
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<!-- email -->
+					<label for="email">
+						<div class="bold"><span class="red">*</span> Email:</div>
+						<input type="email" name="email" form="registration" required>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<!-- description -->
+					<label for="descriptiom">
+						<div class="bold">Description:</div>
+						<textarea name="descriptiom" form="registration" maxlength="200" rows="4"></textarea>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<!-- gender -->
+					<label for="gender">
+						<div class="bold">Gender:</div>
+						<input type="radio" name="gender" value="male" form="registration"><span>Male</span>
+						<input type="radio" name="gender" value="female" form="registration"><span>Female</span>
+						<input type="radio" name="gender" value="other" form="registration"><span>Other</span>
+					</label>
+				</td>
+
+				<td>
+					<!-- date of birth -->
+					<label for="dateOfBirth">
+						<div class="bold"><span class="red">*</span> Date of birth:</div>
+						<input type="date" name="dateOfBirth" form="registration" required>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<!-- city of birth -->
+					<label for="datecityOfBirth">
+						<div class="bold">City of birth:</div>
+						<select form="registration">
+							<option value="">--Choose an option--</option>
+							<option value="vilnius" name="datecityOfBirth">Vilnius</option>
+							<option value="kaunas" name="datecityOfBirth">Kaunas</option>
+							<option value="klaipeda" name="datecityOfBirth">Klaipėda</option>
+							<option value="siauliai" name="datecityOfBirth">Šiauliai</option>
+							<option value="panevezys" name="datecityOfBirth">Panevėžys</option>
+						</select>
+					</label>
+				</td>
+
+				<td>
+					<!-- address -->
+					<label for="address">
+						<div class="bold">Address:</div>
+						<input type="text" name="address" form="registration">
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<!-- subscription -->
+					<label for="subscription">
+						<span class="bold">
+							Subscribe to newsletter
+							<input type="checkbox" name="subscription" form="registration">
+						</span>
+					</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<!-- reset -->
+					<div class="left">
+						<label>
+							<button type="reset" name="reset" form="registration">Reset</button>
+						</label>
+					</div>
+				</td>
+
+				<td>
+					<!-- submit -->
+					<div class="right">
+						<label>
+							<button type="submit" name="submit" form="registration" autofocus>Submit</button>
+						</label>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<hr><span class="red">*</span><span class="italic"> Marked required fields</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
+
+<!-- Sukurti registracijos forma
+
+Forma turi tureti antraste "Register"
+
+Laukai:
+    First name (privalomas),
+    Last name (privalomas),
+    Email (validaus email patikrinimas, privalomas),
+    Description (long text, max characters 200),
+    Gender (du variantai su vienu pasirinkimu su type radio),
+    Date of birth (Datos pasirinkimo input, privalomas)
+    City of birth (Select, minimum 5 options)
+    Address,
+    Subscribe to newsletter (type checkbox)
+
+Ideti mygtuka kuri paspaudus isvalo laukus.
+
+Ideti mygtuka kuri paspaudus:
+
+    * Viska suvedus gerai, puslapis turetu nuvesti i kita puslapi kuriame tekstas - "Congratulations your registration was succesful" 
+
+    * Padarius klaida, narsykle sufokusuos inputa kuris yra neteisingas.
+
+NAMU DARBAS TURI MATYTIS GITHUB REPOZITORIJOJE! -->

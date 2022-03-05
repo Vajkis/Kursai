@@ -1,0 +1,98 @@
+/* #353846 #464a5c #575c72 #686e88 #79809e #8c92ac #9fa4b9 #b1b5c7 #c4c7d4 */
+
+body{
+background: #b1b5c7;
+color: #353846;
+font-family: arial;
+}
+
+.red{
+color: #cc0000;
+}
+
+.bold{
+font-weight: bold;
+}
+
+.italic{
+font-style: italic;
+}
+
+.left{
+position: relative;
+left: 25%;
+}
+
+.right{
+position: relative;
+left: 0%;
+}
+
+span{
+margin-left: 2px;
+}
+
+table{
+margin-top: 10%;
+margin-left: auto;
+margin-right: auto;
+border-collapse: collapse;
+}
+
+thead{
+background: #9fa4b9;
+}
+
+tbody{
+background: #c4c7d4;
+}
+
+th{
+font-size: 24pt;
+padding: 5px;
+}
+
+td{
+padding: 5px;
+}
+
+textarea{
+resize: none;
+}
+
+input, textarea{
+border-color: #9fa4b9;
+border-style: inset;
+border-width: 2px;
+border-radius: 5px;
+background: #b1b5c7;
+color: #353846;
+margin: auto;
+}
+
+input[type=text], input[type=email], input[type=address], input[type=date], textarea, select{
+width: 98%;
+}
+
+input[type=date], select{
+text-align: center;
+}
+
+select{
+border-radius: 5px;
+background: #b1b5c7;
+color: #353846;
+}
+
+custom-select{
+display: none;
+}
+
+button{
+border-color: #575c72;
+width: 75%;
+height: 25px;
+border-radius: 5px;
+background: #686e88;
+color: #c4c7d4;
+}
