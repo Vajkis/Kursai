@@ -1,10 +1,17 @@
-table{
+table{	
+	margin: auto;	
+	margin-top: 15%;
+	position: relative;
 	border-collapse: collapse;
 }
 
+tr{
+	border-radius: 50%;
+}
+
 .block{
-	width: 100px;
-	height: 100px;
+	width: 10vw;
+	height: 10vw;
 	border: solid black	4px;
 }
 
