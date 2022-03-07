@@ -1,0 +1,29 @@
+table{
+	border-collapse: collapse;
+}
+
+.block{
+	width: 100px;
+	height: 100px;
+	border: solid black	4px;
+}
+
+.red{
+	background: #e12826;
+}
+
+.green{
+	background: #36a74b;
+}
+
+.gold{
+	background: #fad405;
+}
+
+.blue{
+	background: #29388b;
+}
+
+.grey{
+	background: #808080;
+}
