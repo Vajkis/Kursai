@@ -1,0 +1,48 @@
+div.main{
+    margin: 7% auto auto auto;
+    height: 158px;
+    width: 158px;
+    border: solid #000 2px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+div.red{
+    height: 50px;
+    width: 100px;
+	border: solid #000 2px;
+	background: #e12826;
+    align-self: flex-start;
+}
+
+div.blue{
+    height: 100px;
+    width: 50px;
+	border: solid #000 2px;
+	background: #29388b;
+    align-self: flex-end;
+}
+
+div.green{
+    height: 100px;
+    width: 50px;
+	border: solid #000 2px;
+	background: #36a74b;
+    align-self: flex-end;    
+}
+
+div.grey{
+    height: 46px;
+    width: 46px;
+	border: solid #000 2px;
+	background: #808080;
+    /* align-self: center; */
+}
+
+div.gold{
+    height: 50px;
+    width: 100px;
+	border: solid #000 2px;
+	background: #fad405;
+    align-self: flex-end;
+}
