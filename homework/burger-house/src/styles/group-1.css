@@ -1,0 +1,95 @@
+.group-1{
+	background-image: url('../assets/group-1/background.jpg');
+  background-repeat: no-repeat;  
+  background-size: 100%;
+	margin-top: -158px;
+	padding-top: 158px;
+	display: flex;
+	justify-content: space-between;	
+	position: relative;
+	z-index: -2;
+}
+
+.group-1 .left-side{
+	margin: 158px 0 284px 60px;
+}
+
+.dashed-container{
+  height: 46px;
+  width: 400px;
+  border: dashed 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	font-size: 25px;
+	padding-top: 3px;
+}
+
+.text-burger, .text-week{	
+	text-transform: uppercase;
+	font-family: 'Alfa Slab One', cursive;
+	text-shadow: 5px 5px #fee8bc;
+	font-size: 114px;
+}
+.text-burger{
+	margin-top: -4px;
+}
+
+.text-week{
+	margin-top: -24px;
+	font-size: 56px;
+}
+	
+.burger-img{
+	position: absolute;
+	z-index: -1;
+  right: 0px;
+  top: 30px;
+}
+
+.price{
+	width: 174px;
+	height: 163px;
+	border-radius: 50%;
+	background: #df1c1c;
+	text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	color: #fff;
+	padding-top: 11px;
+	position: absolute;
+	top: 601px;
+	right: 564px;
+}
+
+.price > div{
+	position: relative;
+
+}
+
+.price .one, .two, .three{
+	position: absolute;
+}
+
+.price .one{
+	font-size: 69px;
+	top: 14px;
+	left: 44px;
+}
+
+.price .two{	
+	font-size: 29px;
+	top: 52px;
+	left: 101px;
+}
+
+.price .three{
+	margin: -17px 0 0 5px;
+  letter-spacing: 10px;
+	font-size: 34px;		
+	top: 104px;
+	left: 42px;
+}

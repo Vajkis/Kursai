@@ -1,0 +1,87 @@
+.group-5{
+	display: flex;
+	justify-content: space-between;
+	height: 723px;
+}
+
+.group-5 > div:nth-of-type(1){
+	display: flex;
+	flex-direction: column;
+}
+
+.group-5 > div:nth-of-type(3){
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.group-5 img{
+	filter: drop-shadow(49px 49px 49px rgba(0, 0, 0, 0.50));
+}
+
+.group-5 .burger{
+	width: 193px;
+	height: 202px;
+	margin: 72px 41px 0 0;
+}
+
+.group-5 .bottle{
+	width: 73px;
+	height: 267px;
+	align-self: flex-end;
+	margin: 35px 0 159px;
+}
+
+.group-5 .dish{
+	width: 256px;
+	height: 400px;
+}
+
+.group-5 div:nth-of-type(2) > div{
+	text-align: center;
+}
+
+.group-5 div:nth-of-type(2) > div:nth-of-type(1){
+	font-family: 'Bebas Neue', cursive;
+	font-size: 28px;
+	margin-top: 127px;
+}
+
+.group-5 div:nth-of-type(2) > div:nth-of-type(2){
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 49px;
+	text-transform: uppercase;
+	margin-top: 2px;
+}
+
+table{
+	border-spacing: 25px;
+	margin-top: 48px;
+}
+
+input{
+	width: 355px;
+	height: 65px;
+	border-radius: 5px;
+	border: solid 1px #bebebe;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 21px;
+	color: #3d3d3d;
+	padding-left: 20px;
+}
+
+button{
+	width: 379px;
+	height: 69px;
+	border-radius: 5px;
+	border: none;
+	background: #df1c1c;
+	color: #fff;
+	font-family: 'Alfa Slab One', cursive;
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+button:hover{
+	cursor: pointer;
+}
