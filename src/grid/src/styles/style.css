@@ -42,7 +42,7 @@ footer{
 
 .test{
 	display: grid;
-	grid-template-areas: "a a ." minmax(50px, auto) "a a ." "b c c";
+	grid-template-areas: "a a ." "a a ." "b c c";
 	grid-gap: 10px
 }
 
