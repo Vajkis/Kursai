@@ -1,0 +1,46 @@
+@import 'theme';
+@import 'mixin';
+
+header{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	margin: auto;
+
+	nav{
+		@include f-sa-c;
+		grid-column: 2;
+	}
+
+	ul{
+		@include f-sa-c;
+		width: 100%;
+	}
+
+	a{
+		@include caps;
+	}
+
+	a:hover{
+		font-weight: 600;
+	}
+
+	h3{
+		text-transform: none;
+	}
+
+	.join{
+		@include f-fe-c;
+		grid-column: 3;
+		column-gap: 22px;
+	}
+
+	button{
+		@include caps;
+		@include button;
+		font-weight: 600;
+	}
+
+	button:hover{
+		background: $colorYellow2;
+	}
+}

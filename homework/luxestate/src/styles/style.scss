@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Work+Sans&display=swap');
+
+@import 'theme';
+@import 'mixin';
+
+body{
+	@include font;
+
+	> *{
+		max-width: 1110px;
+		color: $colorDarkGreen;
+	}
+}
+
+a{
+	@include font;
+	text-decoration: none;
+}
+
+ul{ 
+	padding: unset;
+	list-style-type: none;
+}
+
+small{
+	font-family: $fontFamily2;
+	font-size: 14px;
+	color: #fff;
+}
+
+h1{
+	margin: unset;
+	font-size: 62px;
+}
+
+h1:first-line{
+	line-height:100%;
+}
+ 
+h2{
+	font-size: 40px;
+}
+
+h3{
+	font-size: 25px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+h5{
+	font-size: 15px;
+}

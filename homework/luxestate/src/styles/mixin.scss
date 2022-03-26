@@ -1,0 +1,121 @@
+// flex
+
+@mixin f-c-c{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+@mixin f-sb-c{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin f-sa-c{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@mixin f-fs-c{
+	display: flex;
+	align-items: center;
+}
+
+@mixin f-fe-c{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+@mixin f-fe-fe{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+// font - main
+// font2 - landing contact
+
+@mixin font{
+	font-family: $fontFamily;
+	font-size: 13px;
+	color: $colorDarkGreen;
+	font-weight: 500;
+}
+
+@mixin font2{
+	font-family: $fontFamily;
+	font-size: 18px;
+	color: $colorDarkGreen;
+	font-weight: 700;
+	letter-spacing: -1px;
+}
+
+@mixin caps{
+	text-transform: capitalize;
+}
+
+// button - header
+// button2 - searchImput
+
+@mixin button{
+	width: 144px;
+	height: 40px;
+	border: none;
+	border-radius: 6px;
+	background: $colorYellow;
+	cursor: pointer;
+}
+
+@mixin button2{
+	width: 116px;
+	height: 70px;
+	border: none;
+	border-radius:0 6px 6px 0;
+	background: $colorYellow;
+	cursor: pointer;
+}
+
+// searchInput - with search icon
+
+@mixin searchInput{
+	input{
+		@include font;
+		@include searchIcon;
+		width: 364px;
+		height: 70px;
+		border: none;
+		border-radius:6px 0 0 6px;
+		font-size: 15px;
+	}
+
+	input::placeholder{
+		color: $colorBlue2;			
+	}
+
+	input:focus{
+		padding-left: 26px;			
+		outline: solid 1px $colorLightBlue;
+	}
+
+	input:focus::placeholder{
+		padding-left: 29px;
+	}
+
+	input:not(:placeholder-shown){
+		background: #fff;
+		padding-left: 26px;
+	}
+
+	input::-webkit-search-cancel-button{
+		-webkit-appearance: none;
+	}
+}
+
+@mixin searchIcon{
+	background:no-repeat url("../assets/search.png"), #fff;
+	background-position: 26px;
+	padding-left: 56px;
+}
