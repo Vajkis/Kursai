@@ -2,87 +2,97 @@
 @import 'mixin';
 
 .landing{
-	display: grid;
-	grid-template: repeat(4, 1fr) / 1fr 0.3fr 1fr;
-	margin: auto;
-	height: 632px;
-	position: relative;
+	display: none;
+}
 
-	.background{
-		position: absolute;
-		grid-area: 1 / 1 / 5 / 4;
-		width: 960px;
-		height: 100%;
-		right: 0;
-		background: $colorLightBlue;
-		z-index: -1;
-	}
+@media (min-width: 768px){
 
-	h1{
-		@include caps;
-		grid-area: 2 / 1 / 2 / 3;
-		letter-spacing: -3px;
-	}
+}
 
-	.search{
-		@include searchInput;
-		display: flex;
-		grid-area: 3 / 1;
-		padding-top: 24px;		
-
-		input{
-			grid-area: 3 / 1;
-		}
-
-		button{
-			@include caps;
-			@include button2;
-			font-size: 15px;
-			font-weight: 600;
-		}
-	
-		button:hover{
-			background: $colorYellow2;
-		}
-	}
-		
-	.scrollDown{
-		grid-area: 4 / 1;
-		width: 120px;
-		transform: rotate(270deg) translate(-19px, 20px);
+@media (min-width: 1024px){
+	.landing{
+		display: grid;
+		grid-template: repeat(4, 1fr) / 1fr 0.3fr 1fr;
+		margin: auto;
+		height: 632px;
 		position: relative;
 	
-		a{
-			@include f-fs-c;
+		.background{
+			position: absolute;
+			grid-area: 1 / 1 / 5 / 4;
+			width: 960px;
+			height: 100%;
+			right: 0;
+			background: $colorLightBlue;
+			z-index: -1;
+		}
 	
-			img{
-				margin-left: 10px;
-				height: 28px;
-				transform: rotate(90deg);
+		h1{
+			@include caps;
+			grid-area: 2 / 1 / 2 / 3;
+			letter-spacing: -3px;
+		}
+	
+		.search{
+			@include searchInput;
+			display: flex;
+			grid-area: 3 / 1;
+			padding-top: 24px;		
+	
+			input{
+				grid-area: 3 / 1;
 			}
 	
-			span{
+			button{
 				@include caps;
-				color: $colorBlue2;
-				padding-left: 20px;
+				@include button2;
+				font-size: 15px;
+				font-weight: 600;
+			}
+		
+			button:hover{
+				background: $colorYellow2;
 			}
 		}
-	}
+			
+		.scrollDown{
+			grid-area: 4 / 1;
+			width: 120px;
+			transform: rotate(270deg) translate(-19px, 20px);
+			position: relative;
+		
+			a{
+				@include f-fs-c;
+		
+				img{
+					margin-left: 10px;
+					height: 28px;
+					transform: rotate(90deg);
+				}
+		
+				span{
+					@include caps;
+					color: $colorBlue2;
+					padding-left: 20px;
+				}
+			}
+		}
+		
+		.contact{
+			@include f-c-c;
+			@include font2;
+			gap: 32px;
+			position: absolute;
+			grid-area: 4 / 2 / 4 / 4;
+			width: 590px;
+			height: 80px;
+			right: 0;
+			bottom: 0;
+			background: $colorYellow;
 	
-	.contact{
-		@include f-c-c;
-		@include font2;
-		gap: 32px;
-		position: absolute;
-		grid-area: 4 / 2 / 4 / 4;
-		width: 590px;
-		height: 80px;
-		right: 0;
-		bottom: 0;
-		background: $colorYellow;
-
-		.number{
-			margin-right: 34px;
+			.number{
+				margin-right: 34px;
+			}
 		}
 	}
 }

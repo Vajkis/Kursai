@@ -1,46 +1,115 @@
 @import 'theme';
 @import 'mixin';
 
-header{
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	margin: auto;
+header{	
+	.mobileMenu{
+		display: none;
+	}
 
-	nav{
-		@include f-sa-c;
-		grid-column: 2;
+	.show{
+		display: block;
+	}
+
+	> a{
+		align-self: center;
+		width: 122px;
+		height: 40px;
+	}
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: auto;
+	padding: 20px;
+
+	h3{		
+		margin: unset;
+	}
+
+	.menu{
+		@include button3;
+		grid-area: 1 / 2;
+		justify-self: right;
+		border-radius: 6px;
+
+		img{
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.menu:oveh
+	{
+		box-shadow: inset 0 0 0 2px $colorYellow;
+	}
+
+	nav{		
+		grid-area: 2 / 1 / 2 / 3;
+		justify-self: right;
 	}
 
 	ul{
-		@include f-sa-c;
-		width: 100%;
+		@include f-fs-fe;
+		flex-direction: column;
 	}
+}
 
-	a{
-		@include caps;
+@media (min-width: 768px){
+	header{
+		
 	}
+}
 
-	a:hover{
-		font-weight: 600;
-	}
+@media (min-width: 1024px){	
+	
+	header{	
+		grid-template-columns: 1fr 2fr 1fr;
 
-	h3{
-		text-transform: none;
-	}
+		.menu{
+			display: none;
+		}
 
-	.join{
-		@include f-fe-c;
-		grid-column: 3;
-		column-gap: 22px;
-	}
-
-	button{
-		@include caps;
-		@include button;
-		font-weight: 600;
-	}
-
-	button:hover{
-		background: $colorYellow2;
+		.mobileMenu{
+			display: block;
+		}			
+		
+		nav{
+			@include f-sa-c;
+			grid-area: 1 / 2;
+			justify-self: unset;
+		}
+	
+		ul{
+			@include f-sa-c;
+			width: 100%;
+			flex-direction: unset;
+		}
+	
+		a{
+			@include caps;
+		}
+	
+		a:hover{
+			font-weight: 600;
+		}
+	
+		h3{
+			text-transform: none;
+		}
+	
+		.join{
+			@include f-fe-c;
+			grid-column: 3;
+			column-gap: 22px;
+		}
+	
+		button{
+			@include caps;
+			@include button;
+			font-weight: 600;
+		}
+	
+		button:hover{
+			background: $colorYellow2;
+		}
 	}
 }

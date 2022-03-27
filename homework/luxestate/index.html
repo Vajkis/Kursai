@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Luxestate</title>
+	<meta name="description" content="Real estate brokers">
 
-	<script src="https://kit.fontawesome.com/f86f39c4d0.js" crossorigin="anonymous"></script>
+	<title>Luxestate</title>
 
 	<link rel="stylesheet" type="text/css" href="src/styles/style.css">
 	<link rel="stylesheet" type="text/css" href="src/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="src/styles/landing.css">
+
+	<script type="text/javascript" src="src/scripts/script.js"></script>
 </head>
 <body>
 <header>
 	<a href="#"><h3>luxestate</h3></a>
 
-	<nav>
+	<button class="menu" onclick="openMenu()" aria-label="menu">
+		<img src="src/assets/menu.svg" alt="menu-icon">
+	</button>
+
+	<nav id="mobileMenu" class="mobileMenu">
 		<ul>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Appartaments</a></li>
@@ -25,9 +31,9 @@
 		</ul>
 	</nav>
 
-	<div class="join">
+	<div id="mobileMenu" class="mobileMenu join">
 		<a href="#">Join us</a>
-
+		
 		<button>Geting started</button>
 	</div>
 </header>
@@ -45,7 +51,7 @@
 
 	<div class="scrollDown">
 		<a href="#">
-			<img src="src/assets/arrow.png" 	alt="arrow">
+			<img src="src/assets/arrow.png" alt="arrow">
 
 			<span>Scrol down</span>
 		</a>

@@ -29,6 +29,12 @@
 	align-items: center;
 }
 
+@mixin f-fs-fe{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
 @mixin f-fe-fe{
 	display: flex;
 	justify-content: flex-end;
@@ -57,8 +63,9 @@
 	text-transform: capitalize;
 }
 
-// button - header
-// button2 - searchInput
+// button3 - header menu (mobile)
+// button - header 'join us' (desktop)
+// button2 - searchInput (desktop)
 
 @mixin button{
 	width: 144px;
@@ -78,7 +85,16 @@
 	cursor: pointer;
 }
 
-// searchInput - with search icon
+@mixin button3{
+	align-self: center;
+	width: 40px;
+	height: 40px;
+	background: unset;
+	border: none;
+	padding: unset;
+}
+
+// searchInput - with search icon (desctop)
 
 @mixin searchInput{
 	input{
@@ -101,7 +117,7 @@
 	}
 
 	input:focus::placeholder{
-		padding-left: 29px;
+		padding-left: 30px;
 	}
 
 	input:not(:placeholder-shown){
