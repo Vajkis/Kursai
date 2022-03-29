@@ -21,25 +21,44 @@ header{
 	margin: auto;
 	padding: 20px;
 
-	h3{		
-		margin: unset;
-	}
-
 	.menu{
 		@include button3;
 		grid-area: 1 / 2;
 		justify-self: right;
 		border-radius: 6px;
+		position: relative;
 
 		img{
-			width: 40px;
+			position: absolute;
+			width: 100%;
 			height: 40px;
+			top: 0;
+			left: 0;
 		}
-	}
+
+		.topImg{
+			transition: opacity 200ms;
+		}
+
+		.bottomImg {
+			opacity: 0;
+			transition: opacity 200ms;
+		}
+
+		transition: width 200ms
+	}	
 
 	.menu:hover
 	{
-		box-shadow: inset 0 0 0 2px $colorYellow;
+		width: 160px;
+
+		.topImg{
+			opacity: 0;
+		}
+
+		.bottomImg {
+			opacity: 1;
+		}
 	}
 
 	nav{		
