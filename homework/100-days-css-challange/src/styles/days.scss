@@ -135,6 +135,14 @@
 			bottom: 50%;
 			transform: translateY(50%) rotate(315deg);
 		}
+	}
 
+	.note{
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		color: #fff;
+		margin: unset;
+		font-family: 'Courier Prime', monospace;
 	}
 }
