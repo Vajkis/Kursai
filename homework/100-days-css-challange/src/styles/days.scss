@@ -95,7 +95,8 @@
 		height: 8px;
 		border-radius: 3px;
 		filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.3));
-		-webkit-transition: background 600ms, width 600ms, top 600ms, bottom 600ms, transform 600ms;
+		
+		transition: background 600ms, width 600ms, top 600ms, bottom 600ms, transform 600ms;
 	}
 
 	.lineOne{
@@ -144,5 +145,6 @@
 		color: #fff;
 		margin: unset;
 		font-family: 'Courier Prime', monospace;
+		width: 350px;
 	}
 }
