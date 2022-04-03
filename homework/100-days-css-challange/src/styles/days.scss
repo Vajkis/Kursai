@@ -148,3 +148,164 @@
 		width: 350px;
 	}
 }
+
+// Day 3
+
+.day3{
+	background: #272c34;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.infoIcon{
+		filter: invert(100%);
+	}
+
+	.circle{
+		position: relative;
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+		background: linear-gradient(#7ddffc 124px, #f0de75 56px);
+		overflow: hidden;
+
+		.sunPath{
+			position: relative;
+			width: 150%;
+			height: 150%;
+			top: 7px;
+			left: 50%;
+			transform: translateX(-50%) rotate(-28deg);
+			animation: sunPath 4s ease-in-out infinite;
+		}
+
+		.sun{
+			position: absolute;
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			background: #ffef00;
+			left: 50%;
+			transform: translateX(-50%);			
+		}
+
+		.pyramid{
+			position: absolute;
+			width: 116px;
+			height: 57px;
+			top: 67px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.pyramidLeft{
+			background: #f2f2f2;
+			clip-path: polygon(0 100%, 59px 0, 76px 100%);
+			animation: pyramidLeft 4s ease-in infinite;
+		}
+
+		.pyramidRight{
+			background: #dad7d8;
+			clip-path: polygon(75px 100%, 58px 0, 100% 100%);
+			animation: pyramidRight 4s ease-in infinite;
+		}	
+
+		.shadow{
+			position: absolute;
+			width: 100%;
+			height: 30px;
+			background: rgba(0, 0, 0, 0.2);
+			bottom: 26px;
+			clip-path: polygon(32px 0, 148px 0, 50% 12px);
+			animation: shadow 4s linear infinite;
+
+		}
+	}
+
+	.fade{
+		position: absolute;
+		width: 180px;
+		height: 180px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #272c34;
+		animation: fade 4s ease-in-out infinite;
+	}
+}
+
+@keyframes sunPath{
+	0% { transform: translateX(-50%) rotate(-90deg); }
+	30% { transform: translateX(-50%) rotate(-28deg); }
+	100% { transform: translateX(-50%) rotate(90deg); }
+}
+
+@keyframes pyramidLeft{
+	0%, 30% { background: #f2f2f2; }
+	70%, 100% { background: #dad7d8; }
+}
+
+@keyframes pyramidRight{
+	0%, 30% { background: #dad7d8; }
+	70%, 100% { background: #f2f2f2; }
+}
+
+@keyframes shadow{
+	0% { clip-path: polygon(32px 0, 148px 0, calc(100% + 30px) 0); }
+	30% { clip-path: polygon(32px 0, 148px 0, calc(100% + 30px) 100%); }
+	55% { clip-path: polygon(32px 0, 148px 0, 50% 12px); }
+	75% { clip-path: polygon(32px 0, 148px 0, -30px 100%); }
+	100% { clip-path: polygon(32px 0, 148px 0, -30px 0); }
+}
+
+@keyframes fade{
+	0%, 100% { background: #272c34; }
+	30%, 70% { background: transparent; }
+}
+
+// Day 4
+
+.day4{
+	background: #e56262;
+
+	.infoIcon{
+		filter: invert(100%);
+	}
+
+	.circle{
+		border-radius: 50%;
+	}
+
+	.circle1{
+		width: 90px;
+		height: 90px;
+		animation: circle1 2s cubic-bezier(0.2, 1, 0.6, 1) infinite alternate;
+	}
+
+	.circle2{
+		width: 60px;
+		height: 60px;
+		animation: circle2 2s cubic-bezier(0.2, 1, 0.6, 1) infinite alternate;
+	}
+
+	.circle3{
+		width: 30px;
+		height: 30px;
+		animation: circle3 2s cubic-bezier(0.2, 1, 0.6, 1) infinite alternate;
+	}
+}
+
+@keyframes circle1{
+  0%, 10% { width: 0; height: 0; }
+  100% { width: 90px; height: 90px; }
+}
+
+@keyframes circle2{
+  0%, 40% { width: 0; height: 0; }
+  100% { width: 60px; height: 60px; }
+}
+
+@keyframes circle3{
+  0%, 70% { width: 0; height: 0; }
+  100% { width: 30px; height: 30px; }
+}

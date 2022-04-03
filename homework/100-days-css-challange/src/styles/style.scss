@@ -46,3 +46,13 @@ body{
 .shadow{
    filter: drop-shadow(0 0 13px rgba(0, 0, 0, 0.2));
 } 
+
+.shadow2{
+   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
+} 
+
+.f-c-c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
